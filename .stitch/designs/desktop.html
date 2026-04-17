@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The Midnight Gala | Wedding Invitation</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@300;400;600;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-fixed-dim": "#c8c6c3",
+                    "primary-container": "#d4ad65",
+                    "on-tertiary": "#30312e",
+                    "tertiary-container": "#b4b3af",
+                    "tertiary": "#d0cecb",
+                    "on-surface-variant": "#d0c5af",
+                    "on-tertiary-fixed": "#1b1c1a",
+                    "inverse-on-surface": "#313030",
+                    "inverse-surface": "#e5e2e1",
+                    "surface-container": "#201f1f",
+                    "surface-container-highest": "#353534",
+                    "on-error": "#690005",
+                    "on-primary-container": "#5b4000",
+                    "inverse-primary": "#775a19",
+                    "on-secondary-container": "#b7b5b4",
+                    "on-background": "#e5e2e1",
+                    "on-secondary-fixed-variant": "#474746",
+                    "on-tertiary-fixed-variant": "#474744",
+                    "surface-variant": "#353534",
+                    "surface-container-low": "#1c1b1b",
+                    "on-secondary": "#313030",
+                    "error": "#ffb4ab",
+                    "surface-bright": "#3a3939",
+                    "primary": "#f1c97d",
+                    "on-surface": "#e5e2e1",
+                    "error-container": "#93000a",
+                    "surface-tint": "#e9c176",
+                    "secondary-fixed-dim": "#c8c6c5",
+                    "primary-fixed-dim": "#e9c176",
+                    "surface-container-high": "#2a2a2a",
+                    "outline-variant": "#4d4635",
+                    "surface-container-lowest": "#0e0e0e",
+                    "on-primary-fixed-variant": "#5d4201",
+                    "secondary": "#c8c6c5",
+                    "on-secondary-fixed": "#1c1b1b",
+                    "background": "#131313",
+                    "surface": "#131313",
+                    "outline": "#99907c",
+                    "on-primary": "#412d00",
+                    "secondary-fixed": "#e5e2e1",
+                    "on-tertiary-container": "#454543",
+                    "surface-dim": "#131313",
+                    "secondary-container": "#474746",
+                    "tertiary-fixed": "#e4e2de",
+                    "primary-fixed": "#ffdea5",
+                    "on-error-container": "#ffdad6",
+                    "on-primary-fixed": "#261900"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0px",
+                    "lg": "0px",
+                    "xl": "0px",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Noto Serif"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: #131313;
+            color: #e5e2e1;
+            font-family: 'Manrope', sans-serif;
+            overflow-x: hidden;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .hero-text-shadow {
+            text-shadow: 0 4px 12px rgba(0,0,0,0.5);
+        }
+        .gilded-shimmer:hover {
+            background: linear-gradient(135deg, #f1c97d 0%, #d4ad65 100%);
+            background-size: 200% 200%;
+            animation: shimmer 2s linear infinite;
+        }
+        @keyframes shimmer {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        .glass-overlay {
+            background: rgba(32, 31, 31, 0.6);
+            backdrop-filter: blur(20px);
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: repeat(10, 80px);
+            gap: 16px;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 flex justify-between items-center px-12 h-24 bg-neutral-950/80 backdrop-blur-xl">
+<div class="text-2xl font-serif text-[#D4AF37] tracking-widest uppercase">The Midnight Gala</div>
+<div class="hidden md:flex items-center gap-12 font-serif tracking-[0.05em] uppercase text-xs">
+<a class="text-[#D4AF37] border-b-2 border-[#D4AF37] pb-1 hover:text-[#D4AF37] transition-colors duration-500" href="#">Our Story</a>
+<a class="text-neutral-400 font-sans hover:text-[#D4AF37] transition-colors duration-500" href="#">The Gallery</a>
+<a class="text-neutral-400 font-sans hover:text-[#D4AF37] transition-colors duration-500" href="#">The Venue</a>
+<a class="text-neutral-400 font-sans hover:text-[#D4AF37] transition-colors duration-500" href="#">RSVP</a>
+</div>
+<div class="flex items-center text-[#D4AF37]">
+<span class="material-symbols-outlined" data-icon="event_available">event_available</span>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="relative h-screen w-full flex flex-col items-center justify-center text-center px-6">
+<div class="absolute inset-0 z-0">
+<img alt="hero image" class="w-full h-full object-cover brightness-[0.4]" data-alt="cinematic wedding couple portrait where the bride is in a luxurious light rose blush pink silk gown and the groom is in a classic black formal tuxedo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHmZ8AByO-7N-39t-vMh0o6Qon3S3Yh_vR23869n8vHn3x9H7qK6l_Vl8Z_n7m4R9s8k7j6h5g4f3d2s1a_vMh0o6Qon3S3Yh_vR23869n8vHn3x9H7qK6l_Vl8Z_n7m4R9s8k7j6h5g4f3d2s1a"/>
+<div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background"></div>
+</div>
+<div class="relative z-10 space-y-8">
+<h2 class="font-headline text-primary tracking-[0.2em] uppercase text-sm md:text-base">You are cordially invited to</h2>
+<h1 class="font-headline text-6xl md:text-9xl tracking-tight leading-none">
+<span class="block">Isabella</span>
+<span class="block italic font-light text-primary-container text-4xl md:text-6xl my-4">&amp;</span>
+<span class="block">Julian</span>
+</h1>
+<p class="font-body text-on-surface-variant tracking-[0.3em] uppercase text-xs md:text-sm">December 31st | 2024</p>
+<div class="pt-12">
+<button class="bg-gradient-to-br from-primary to-primary-container text-on-primary px-12 py-5 uppercase tracking-widest text-xs font-bold transition-all duration-500 hover:scale-105 gilded-shimmer">
+                Open Invitation
+            </button>
+</div>
+</div>
+<div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-4 opacity-40">
+<span class="text-[10px] tracking-widest uppercase">Scroll to explore</span>
+<div class="w-px h-12 bg-primary"></div>
+</div>
+</section>
+<!-- Glimpses of Forever (Bento Gallery) -->
+<section class="py-32 px-12 max-w-[1400px] mx-auto">
+<div class="flex flex-col items-center mb-24">
+<span class="w-1 h-1 bg-primary mb-8"></span>
+<h2 class="font-headline text-4xl md:text-5xl text-center mb-4">Glimpses of Forever</h2>
+<p class="font-body text-on-surface-variant tracking-widest uppercase text-xs">Capturing the prelude to our union</p>
+</div>
+<div class="bento-grid">
+<div class="col-span-4 row-span-6 overflow-hidden">
+<img alt="gallery 1" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000 scale-105 hover:scale-100" data-alt="elegant close up of a diamond engagement ring sitting on a piece of dark velvet fabric with soft atmospheric lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLzykgR_Da5IehKZqTzEpLWk7eYZfTrXpkr_hhYbdPbfaX4XAk22W59jHzEuBDjo6qTj5_yLO8N_CLd5uqDZHKKLGWmmEBL8KNrOzcesJXvw7KgopXvNXuhuUFULsf-ZjKSWkWztY-54LASrn-srBK3YKBjNRc6iLTzUehZQ8KF1Bw_a48MaObW3iAS7T5mRs_UipjVi2ZAuZ5BCIiJF5DkQF34h-d1oTyJH_a-CqIT_LfJqEVbAJh4rOPnbkCJf6wJyYSy3mJ2ac"/>
+</div>
+<div class="col-span-8 row-span-4 overflow-hidden">
+<img alt="gallery 2" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000 scale-105 hover:scale-100" data-alt="black and white cinematic shot of a couple walking away down a grand architectural marble corridor with dramatic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNVn_S9sDN0OKiOPqfJQoPFIs5iq4LNrlSH0JMzpNJNb6-baZOj4WM_LBqRclIq__ae9I6Nmm8aRjrNuRy4-eNy4_ONG414Bz2mbCTSbAEGuJs_X9PzhRtqwaHzz2aCbJkITePB9FevmCCa8OTBgz3Dqq_61LlTG-YxlsqNLmZj9S7zu2UZ98TN2P3PuqflzATUhZxBumAPvDMxwAGiiBQEzETmaAEqZjxzKlkf_TBAt7xKju8iFcQt1IZ1ClTO1HtgPLjydV6yM8"/>
+</div>
+<div class="col-span-4 row-span-6 overflow-hidden">
+<img alt="gallery 3" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000 scale-105 hover:scale-100" data-alt="close up of a vintage luxury watch and pair of pearl earrings on a dark reflective surface with golden reflections" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBItZQ-5we7VP1DZ2a2qPDpVzuct4zJmOGLaBIaouRWhDt-_taMA32o2-_TH6jDFTndRWm-dErdfXQXhQahMLqkKGIZ8zEu0Ghzqy1m3ZxwPEQmXGCyLm3_Ydfn8j3CDtEweU7Do9esRhSRceBrwPjRwoehgxUL0xNjx1wSOwWJlbw_mRL6BSGRs9KxPoYPB4IrqN2DOdzMYgZqz_igWAXlWJyfpDc04mtH89_R-SCI3V_6cn4Kvv0UcJOJ2OjZaQFyqFsvpPZa_-0"/>
+</div>
+<div class="col-span-4 row-span-4 overflow-hidden">
+<img alt="gallery 4" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000 scale-105 hover:scale-100" data-alt="atmospheric shot of champagne glasses arranged on a silver tray in a dimly lit high-end venue with blurred lights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_Pmuf4VgiLBrdVjaFRHtAyWFY_GFidzDp73An6WLXyjruIIPhM2Z40nw8MZuG9dLXBaJtKERSdBXpADitTgWudsuOeavKIEyUsOJ5V91_botiPnMbFQWoslgjGjI9YSWlLzQP7-wZ_Va3DOZPIVUYXjZgFl8oGYbR8G6ijCkRjYVjgLoj3KOoStbhpgGEuCN-TxVeux15VSUTYLWHrpKcwpQqS2NIpL3s095k6WFUKkSnoW_Z3E197YPp3lMMx8vxTPSTBe6ZLkw"/>
+</div>
+</div>
+</section>
+<!-- The Reception -->
+<section class="bg-surface-container-low py-32 px-12">
+<div class="max-w-[1200px] mx-auto grid md:grid-cols-2 gap-24 items-center">
+<div class="order-2 md:order-1 space-y-12">
+<div class="space-y-4">
+<h2 class="font-headline text-5xl">The Reception</h2>
+<div class="w-12 h-[1px] bg-primary"></div>
+</div>
+<div class="grid gap-10">
+<div class="flex gap-6 items-start">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="schedule">schedule</span>
+<div>
+<h4 class="font-headline text-xl mb-1 text-on-surface">Seven O'Clock</h4>
+<p class="text-on-surface-variant text-sm font-body uppercase tracking-wider">Cocktails &amp; Hors D'oeuvres</p>
+</div>
+</div>
+<div class="flex gap-6 items-start">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="restaurant_menu">restaurant_menu</span>
+<div>
+<h4 class="font-headline text-xl mb-1 text-on-surface">Eight-Thirty</h4>
+<p class="text-on-surface-variant text-sm font-body uppercase tracking-wider">Grand Dinner &amp; Celebration</p>
+</div>
+</div>
+<div class="flex gap-6 items-start">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="apparel">apparel</span>
+<div>
+<h4 class="font-headline text-xl mb-1 text-on-surface">Black Tie Attire</h4>
+<p class="text-on-surface-variant text-sm font-body uppercase tracking-wider">Formal Evening Wear Requested</p>
+</div>
+</div>
+</div>
+</div>
+<div class="order-1 md:order-2 h-[600px] relative">
+<div class="absolute -top-8 -left-8 w-full h-full bg-primary/5"></div>
+<img alt="reception venue" class="w-full h-full object-cover z-10 relative brightness-75" data-alt="long formal dinner table set with gold cutlery, crystal glasses, and tall black candles in an opulent wood-paneled hall" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFm6jNepQYgZ9CXVRV1ESm-n0bCb1912nfvN6hnJ3moXVOYesaSQIUjoKayF7urJ09APCzqFeLWu4YSZtPCge-cgBgRcXDOX6Qg2jWjVeOe5NRYdWZNwQUnuJdGAEN_cqutnSZ1GEj2DZshs2hSUr_tCvtXWMBeuuMp9SZXgQQp6GXheL0MQo_14DiuIrpOkNPx7vSz3-WO-R99w36_dpeJ84bOPZJHAS6lsGz1HekgMf_WcpUUQOVZdqvbfJ_W4Bu-Qn9c3aMbk0"/>
+</div>
+</div>
+</section>
+<!-- Venue Section -->
+<section class="py-32 px-12">
+<div class="max-w-[1200px] mx-auto text-center mb-16">
+<h2 class="font-headline text-4xl mb-4">The Aethelgard Estate</h2>
+<p class="font-body text-on-surface-variant tracking-widest uppercase text-xs">1200 Obsidian Drive, Blackwood Valley</p>
+</div>
+<div class="max-w-[1200px] mx-auto h-[500px] bg-surface-container-highest relative overflow-hidden">
+<!-- Simulated Map -->
+<div class="absolute inset-0 opacity-20 grayscale scale-150" data-location="Blackwood Valley">
+<img alt="map" class="w-full h-full object-cover" data-alt="dark stylized topographic map showing a valley and estate grounds with subtle golden grid lines" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXDlxvIRbOWGOWG1xLvpE5eEmZ1gepT3AQKBI1qxc0xLZHN7ypb7L_4IxcNMxZFRDK_stT1e5XvjShFepZ7VGYsQkoOn63JW9EPs3n7odi_AAWsVrh_cRum6VlIx8GPfV8BGgS6iFA9w3YdqCIKI_czZ6FjC4se8A9f-f0G2SMMI2zd-DRRnqLvCxp6RNk9r1eIEt3JP6M_qIKf7Jh9s5B_7b82vT2k8NppC8zoIepNBv8tc5-sADpgd96Ed5GnX3B5wRQ1LCcmS0"/>
+</div>
+<div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-primary text-5xl drop-shadow-lg" data-icon="location_on" style="font-variation-settings: 'FILL' 1;">location_on</span>
+<div class="bg-background/90 px-6 py-2 mt-4 backdrop-blur-md">
+<span class="font-serif tracking-widest uppercase text-xs text-primary">Arrive Here</span>
+</div>
+</div>
+</div>
+<!-- Navigation Card -->
+<div class="absolute bottom-8 right-8 bg-surface-container p-8 max-w-xs space-y-6 shadow-2xl">
+<h3 class="font-headline text-lg">Planning Your Arrival</h3>
+<p class="text-xs text-on-surface-variant leading-relaxed">Valet parking will be available at the main carriage entrance starting at 6:30 PM.</p>
+<div class="flex flex-col gap-3">
+<button class="w-full py-3 border border-outline-variant text-[10px] tracking-[0.2em] uppercase font-bold hover:bg-primary hover:text-on-primary transition-all duration-300">Get Directions</button>
+<button class="w-full py-3 border border-outline-variant text-[10px] tracking-[0.2em] uppercase font-bold hover:bg-primary hover:text-on-primary transition-all duration-300">Local Stay</button>
+</div>
+</div>
+</div>
+</section>
+<!-- RSVP Section -->
+<section class="py-40 px-12 bg-surface-container-lowest">
+<div class="max-w-[800px] mx-auto text-center space-y-16">
+<div class="space-y-6">
+<h2 class="font-headline text-5xl md:text-6xl italic">Will You Join Us?</h2>
+<p class="font-body text-on-surface-variant text-lg max-w-md mx-auto">Please kindly respond by the first of December to assist us in our final arrangements.</p>
+</div>
+<form class="space-y-12">
+<div class="grid md:grid-cols-2 gap-12 text-left">
+<div class="space-y-2 border-b border-outline-variant pb-2">
+<label class="block font-label text-[10px] text-on-surface-variant uppercase tracking-widest">Full Name</label>
+<input class="w-full bg-transparent border-none focus:ring-0 text-on-surface font-serif text-lg placeholder:text-neutral-800" placeholder="Type your name here" type="text"/>
+</div>
+<div class="space-y-2 border-b border-outline-variant pb-2">
+<label class="block font-label text-[10px] text-on-surface-variant uppercase tracking-widest">Dietary Preferences</label>
+<input class="w-full bg-transparent border-none focus:ring-0 text-on-surface font-serif text-lg placeholder:text-neutral-800" placeholder="Vegetarian, Vegan, etc." type="text"/>
+</div>
+</div>
+<div class="flex flex-col md:flex-row gap-6 justify-center pt-8">
+<button class="px-16 py-6 bg-gradient-to-br from-primary to-primary-container text-on-primary uppercase tracking-widest text-xs font-extrabold gilded-shimmer">
+                    Joyfully Attend
+                </button>
+<button class="px-16 py-6 border border-outline-variant text-primary uppercase tracking-widest text-xs font-extrabold hover:border-primary transition-colors">
+                    Regretfully Decline
+                </button>
+</div>
+</form>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full border-t border-neutral-800/30 bg-neutral-950 flex flex-col items-center gap-6 py-16 px-8">
+<div class="text-lg font-serif text-[#D4AF37] uppercase tracking-widest">THE MIDNIGHT GALA</div>
+<div class="flex gap-12 font-sans text-xs tracking-widest uppercase text-neutral-500">
+<a class="hover:text-white transition-opacity" href="#">Privacy</a>
+<a class="hover:text-white transition-opacity" href="#">Contact Us</a>
+</div>
+<div class="font-sans text-[10px] tracking-widest uppercase text-neutral-600 mt-8">
+        © 2024 THE MIDNIGHT GALA. DESIGNED FOR ELEGANCE.
+    </div>
+</footer>
+</body></html>

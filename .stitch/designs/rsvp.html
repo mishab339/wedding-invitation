@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>E&amp;A | The Wedding of Elias &amp; Amara</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary-fixed": "#e5e2e1",
+                        "inverse-primary": "#775a19",
+                        "on-primary": "#412d00",
+                        "on-secondary-fixed": "#1c1b1b",
+                        "on-tertiary": "#30312e",
+                        "on-secondary": "#313030",
+                        "tertiary": "#d0cecb",
+                        "tertiary-container": "#b4b3af",
+                        "surface-variant": "#353534",
+                        "primary-container": "#d4ad65",
+                        "surface-tint": "#e9c176",
+                        "on-primary-fixed-variant": "#5d4201",
+                        "surface": "#131313",
+                        "surface-container-highest": "#353534",
+                        "surface-container-lowest": "#0e0e0e",
+                        "surface-container-high": "#2a2a2a",
+                        "inverse-on-surface": "#313030",
+                        "on-primary-fixed": "#261900",
+                        "secondary": "#c8c6c5",
+                        "on-tertiary-fixed-variant": "#474744",
+                        "surface-container-low": "#1c1b1b",
+                        "surface-container": "#201f1f",
+                        "outline-variant": "#4d4635",
+                        "error": "#ffb4ab",
+                        "on-secondary-container": "#b7b5b4",
+                        "outline": "#99907c",
+                        "surface-dim": "#131313",
+                        "secondary-fixed-dim": "#c8c6c5",
+                        "on-tertiary-fixed": "#1b1c1a",
+                        "primary-fixed-dim": "#e9c176",
+                        "secondary-container": "#474746",
+                        "on-background": "#e5e2e1",
+                        "on-surface": "#e5e2e1",
+                        "tertiary-fixed-dim": "#c8c6c3",
+                        "error-container": "#93000a",
+                        "on-tertiary-container": "#454543",
+                        "surface-bright": "#3a3939",
+                        "inverse-surface": "#e5e2e1",
+                        "primary-fixed": "#ffdea5",
+                        "on-error": "#690005",
+                        "primary": "#f1c97d",
+                        "on-surface-variant": "#d0c5af",
+                        "tertiary-fixed": "#e4e2de",
+                        "on-secondary-fixed-variant": "#474746",
+                        "background": "#131313",
+                        "on-primary-container": "#5b4000",
+                        "on-error-container": "#ffdad6",
+                        "rose-accent": "#e3b5b5",
+                        "rose-gold": "#d9a0a0"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0rem",
+                        "lg": "0rem",
+                        "xl": "0rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Noto Serif"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Manrope', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .shimmer-effect:hover {
+            background: linear-gradient(135deg, #f1c97d 0%, #e3b5b5 50%, #f1c97d 100%);
+            background-size: 200% 100%;
+            transition: background-position 0.8s ease;
+            background-position: 100% 0;
+        }
+        .rose-gradient {
+            background: linear-gradient(to right, #f1c97d, #e3b5b5);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .masonry-grid {
+            columns: 2;
+            column-gap: 1rem;
+        }
+        @media (min-width: 768px) {
+            .masonry-grid {
+                columns: 3;
+            }
+        }
+        .masonry-item {
+            break-inside: avoid;
+            margin-bottom: 1rem;
+        }
+        .glass-overlay {
+            background: linear-gradient(180deg, rgba(19, 19, 19, 0) 0%, rgba(19, 19, 19, 0.6) 100%);
+        }
+    </style>
+<style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface selection:bg-rose-accent/30 selection:text-on-surface">
+<!-- TopAppBar Navigation -->
+<nav class="fixed top-0 w-full z-[100] h-20 bg-zinc-950/60 backdrop-blur-xl flex justify-between items-center px-6 md:px-12 shadow-[0_20px_50px_rgba(227,181,181,0.05)]">
+<div class="text-2xl font-serif tracking-widest rose-gradient">E&amp;A</div>
+<div class="hidden md:flex gap-12">
+<a class="text-rose-accent font-bold font-serif tracking-[0.05em] uppercase text-sm hover:text-primary transition-all duration-500" href="#gallery">Gallery</a>
+<a class="text-stone-400 font-serif tracking-[0.05em] uppercase text-sm hover:text-rose-accent transition-all duration-500" href="#events">Reception</a>
+<a class="text-stone-400 font-serif tracking-[0.05em] uppercase text-sm hover:text-rose-accent transition-all duration-500" href="#rsvp">RSVP</a>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-rose-accent">music_note</span>
+<span class="material-symbols-outlined text-rose-accent md:hidden">menu</span>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative h-screen w-full flex items-center justify-center overflow-hidden bg-surface-container-lowest">
+<div class="absolute inset-0 z-0">
+<img alt="Elias and Amara" class="w-full h-full object-cover opacity-60 scale-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpKpHziZwX3e2KlULOQSYSODrE07n2ryrTYP-t6LoT0TCfMkLlQhA1Qdsp2yzLf4RVLJ_Kw9-rsqlpp8LFPd9QkX0KCBILyoiaZcYrNqfmFj2YfTCh4Ro8oPfD5YjalKXdGttKlK3zlq87YsuAVG1Da-sZaGlp6ovemjvGjsolFVv_m1Q4cHiATYioxZOjNPvd6QfSkTc4NGGm8p58jb2AWzrFypN98nFdsiKV9bUtpjX1JKu2z3vzXo27Nld5Gz7LgVv6z7uSuKI"/>
+<div class="absolute inset-0 bg-gradient-to-b from-transparent via-background/40 to-background"></div>
+</div>
+<div class="relative z-10 text-center px-4 max-w-4xl">
+<p class="font-headline italic text-rose-accent/80 text-lg md:text-xl tracking-widest mb-6">Together with their families...</p>
+<h1 class="font-headline text-6xl md:text-9xl text-primary tracking-tighter mb-8 leading-none">
+                Elias <span class="text-4xl md:text-6xl block md:inline-block md:mx-4 font-normal text-rose-accent/30">&amp;</span> Amara
+            </h1>
+<div class="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16 mb-12">
+<div class="flex flex-col items-center">
+<span class="text-primary font-headline text-3xl mb-1">DECEMBER</span>
+<span class="text-on-surface-variant tracking-[0.3em] uppercase text-xs">2024</span>
+</div>
+<div class="h-px w-12 bg-rose-accent/30 hidden md:block"></div>
+<div class="flex flex-col items-center">
+<span class="text-primary font-headline text-5xl">24</span>
+</div>
+<div class="h-px w-12 bg-rose-accent/30 hidden md:block"></div>
+<div class="flex flex-col items-center">
+<span class="text-primary font-headline text-3xl mb-1">TUESDAY</span>
+<span class="text-on-surface-variant tracking-[0.3em] uppercase text-xs">At 5 PM</span>
+</div>
+</div>
+<a class="inline-block px-12 py-4 bg-gradient-to-br from-primary via-rose-accent to-rose-gold text-on-primary font-bold tracking-widest uppercase text-xs shimmer-effect" href="#rsvp">
+                Open Invitation
+            </a>
+</div>
+</header>
+<!-- Gallery Section -->
+<section class="py-32 px-6 bg-surface" id="gallery">
+<div class="max-w-6xl mx-auto">
+<div class="text-center mb-24">
+<h2 class="font-headline text-4xl md:text-5xl text-rose-accent mb-4 tracking-wider italic">Glimpses of Forever</h2>
+<div class="w-8 h-8 mx-auto flex items-center justify-center">
+<div class="w-1 h-1 bg-rose-accent rounded-full"></div>
+</div>
+</div>
+<div class="masonry-grid">
+<!-- Gallery Item 1 -->
+<div class="masonry-item relative group overflow-hidden border-[0.5px] border-primary/20 p-1 bg-primary/5">
+<div class="relative overflow-hidden aspect-[4/5]">
+<img alt="Wedding Memory" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBH46bR9qsCJNUk5FA4dybgbQ5hjtRBdZ12TqK-uFVsH81iBSb6aemtdy55rfQYF_ZtegU4-Mwu8CkruUo7PauFgGbUSe7pff0zrLr6WZWH8ou3BhHoN-Ih4Ul-eNw-wg_bPZaomMN3Gct8lnB7ZFMaMGRTO_CXGZg7CVjv1Rzh_UUwz-3UJEgbS-t7F4srO6a10I9Y3MrqtOhflQk6UeRAurWqn10r-cDXOPUYSTfy4Lxg6RgMgqOvpBT4Y7IeN3KeHFycmm60bS4"/>
+<div class="absolute inset-0 glass-overlay opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+<div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none flex items-center justify-center">
+<span class="text-primary/40 font-serif italic text-xs tracking-widest">II. XXIV. MMXXIV</span>
+</div>
+</div>
+</div>
+<!-- Gallery Item 2 -->
+<div class="masonry-item relative group overflow-hidden border-[0.5px] border-primary/20 p-1 bg-primary/5">
+<div class="relative overflow-hidden aspect-square">
+<img alt="Wedding Memory" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0NYVQPXj5Q6CAssQYoH3hljwhqJxinR1Yr8aEI7NSsTdifFaPM3w-GPv2PAsIQyIM0Cgl2N2j7fTHq2QoglleDhPRbpFD86w6xFotelUKP2ufV4acronQvxVvpd1treuq6EyI2OXLLxTKlpQXPuTA3pdRQVaLswaBai1FqDh53nkEWWnp2LK9BGWDi9lVqtQsUpKPev8icPLCTcsMQX0NHzXdPwANuNw10uzFKbU4akSBkA6vdrUdcDl0AGezw87ygB9K4gMynBU"/>
+<div class="absolute inset-0 glass-overlay opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+</div>
+</div>
+<!-- Gallery Item 3 -->
+<div class="masonry-item relative group overflow-hidden border-[0.5px] border-primary/20 p-1 bg-primary/5">
+<div class="relative overflow-hidden aspect-[3/4]">
+<img alt="Wedding Memory" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMpOEsC_PlE_ctmhmpy90OuRSPCZyVMPqUB806uxd_qHtBYl-lIFu0iHaZfO9ZOv7sq0EYyMjIL_Nlz20D910-iP-NJwC6dt-xrvtVEoP8xB9KjL2uFYshoJEUUKRfTnyTxVtziiINoj-cbrQpKRAePztncOZEfPIfUML-h2kqelT25tZqm_i5gGC3oeucgCiJDeErXfU4oa8rw_oTyuvT4vWeN6_L_YZdzoAKmj6_PvxA8ftnb7BLvCia_NxjZoiuh8KNd4kKcVw"/>
+<div class="absolute inset-0 glass-overlay opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+</div>
+</div>
+<!-- Gallery Item 4 -->
+<div class="masonry-item relative group overflow-hidden border-[0.5px] border-primary/20 p-1 bg-primary/5">
+<div class="relative overflow-hidden aspect-[9/16]">
+<img alt="Wedding Memory" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfmlIwz4mLQvZBemthRSs4IMBaesJxptnwR_eD2d2DFJXaUtv3xzsapvp0eU-UrlYWEjGUNIOogpDZWX2QL6xDP5DP0JrT4kewsolUomZtOk-OPDhKGPiddrlhu0_B1ydic3YxHkTe1Gk5TV9DkA5kfaYV9sGgaagttWjtcsDRGIzWspoBhe6hf2ntshlaKd07_M7k9PeuNNakGBdZ2TqSxzL8gaO-qiqvDtFg_HDHICA8yWviJQAjEswiArJkkYfhmsec19hJ9hk"/>
+<div class="absolute inset-0 glass-overlay opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+</div>
+</div>
+<!-- Gallery Item 5 -->
+<div class="masonry-item relative group overflow-hidden border-[0.5px] border-primary/20 p-1 bg-primary/5">
+<div class="relative overflow-hidden aspect-square">
+<img alt="Wedding Memory" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJzH9ldL77BTmHkvj0iiL_W3Io4UY2WXsw1WH0qq_YIzJyUNvjHMYmoJR-0Ju3VD9T6lEJ4pQCYO-SttTnUoARJC_Tp9MazjmivNSSv86DrymiNzLzNUZVYEMEwW9pTDTHJZpO8WYVNwgbmZihBV5_CaxN10i5EOmfQBhrHSwc-1Kn5SaQ3izb2tLwQ3f3KuzPlR-No8fABJHcPoER8UxKNAjKYiqA_E5vJKPd0EsZC19FJXfgcFaePbdYSYdNof9SW4teqRlhmgI"/>
+<div class="absolute inset-0 glass-overlay opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+</div>
+</div>
+<!-- Gallery Item 6 -->
+<div class="masonry-item relative group overflow-hidden border-[0.5px] border-primary/20 p-1 bg-primary/5">
+<div class="relative overflow-hidden aspect-[4/5]">
+<img alt="Wedding Memory" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOVImzIb8fNekFrLRvIxHNWPYqxfOnF5qEA3I-2PNqebloiqep0DvHzsu3kRPUTQbP1nFWRwoMpoEQhw1nO3jYDzS2kJ9MV-Vp1J-et1IgoRHVREERfrzB711I86rYjvtE4ZEbBMNq5TOz7zvZfSYfsJlEaK7FA_KWKNC8ppl1HMNDMyYyEMoB3qK8PaOgxz1rjt9B9FIiWCbhZB9OPAf1cNvFO4NMMsZbU4bjoURKNlcK0rSjqZqNfgWa9skEH_SzcvO8ChcyTd0"/>
+<div class="absolute inset-0 glass-overlay opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- The Reception Section -->
+<section class="py-32 px-6 bg-surface-container-low" id="events">
+<div class="max-w-3xl mx-auto">
+<h2 class="font-headline text-4xl text-center text-primary mb-20 tracking-[0.1em] uppercase">The Reception</h2>
+<div class="bg-surface p-12 md:p-16 border border-rose-accent/20 relative overflow-hidden">
+<div class="absolute top-0 right-0 w-32 h-32 bg-rose-accent/5 rotate-45 translate-x-16 -translate-y-16"></div>
+<div class="relative z-10 text-center">
+<span class="text-rose-accent text-sm tracking-[0.5em] uppercase mb-10 block font-bold">Saturday, December 26, 2024</span>
+<div class="flex flex-col items-center justify-center mb-12">
+<span class="material-symbols-outlined text-rose-accent text-3xl mb-4">schedule</span>
+<h3 class="font-headline text-4xl text-on-surface mb-2">8:00 PM</h3>
+<p class="text-on-surface-variant font-light tracking-widest uppercase text-xs">Black Tie Attire</p>
+</div>
+<div class="h-px w-24 bg-rose-accent/30 mx-auto mb-12"></div>
+<div class="flex flex-col items-center justify-center">
+<span class="material-symbols-outlined text-rose-accent text-3xl mb-4">location_on</span>
+<h3 class="font-headline text-3xl text-on-surface mb-2">The Heritage Hall</h3>
+<p class="text-on-surface-variant font-light leading-relaxed">
+                            125 Luxury Way, Kensington<br/>
+                            London, United Kingdom
+                        </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Venue Map -->
+<section class="relative h-[600px] bg-surface-container-lowest overflow-hidden">
+<div class="absolute inset-0 grayscale contrast-125 opacity-30">
+<div class="w-full h-full bg-zinc-900 flex items-center justify-center">
+<img alt="Map Location" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuALLF48e8aeVxIwQJr18klyLDCqOT2p7C0-ZJ_UysW0nMQTUnBvoup5vW-FQEZdEiqWOeGOS32-pKlk0dQrWbum1GQBcZ81-X5DSrfzb24SvdFUamlUTbeb-wDDYRFPZ7fyPmlPIXmOPNZM3Pc8mrwjEApqj4nvTQVureUHFZN9qj8Qp4W9nt2ifks3YqWJTwa1bmNfvB7gL2D0WPNTIXdzgxZ960x5r2D4OI0Vf0SppF17JmMqNk83tmes5ODcSWPOpXkOc8kHHZE"/>
+</div>
+</div>
+<div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+<div class="bg-surface/80 backdrop-blur-xl p-12 border border-rose-accent/20 max-w-md text-center pointer-events-auto">
+<span class="material-symbols-outlined text-rose-accent text-4xl mb-6">location_on</span>
+<h2 class="font-headline text-2xl mb-4 text-on-surface">The Heritage Hall</h2>
+<p class="text-on-surface-variant font-light mb-8 text-sm">125 Luxury Way, Kensington, London<br/>United Kingdom, SW1X 7SJ</p>
+<button class="px-10 py-3 bg-transparent border border-rose-accent text-rose-accent font-bold tracking-[0.2em] uppercase text-[10px] hover:bg-rose-accent hover:text-on-primary transition-all duration-300">
+                    Navigate
+                </button>
+</div>
+</div>
+</section>
+<!-- RSVP Section -->
+<section class="relative py-32 px-6 bg-surface-container-lowest overflow-hidden py-40" id="rsvp">
+<div class="absolute top-0 right-0 w-[500px] h-[500px] bg-rose-accent/5 blur-[120px] rounded-full"></div>
+<div class="absolute bottom-0 left-0 w-[500px] h-[500px] bg-rose-accent/5 blur-[120px] rounded-full"></div>
+<div class="max-w-2xl mx-auto relative z-10">
+<div class="bg-surface-container-low/40 backdrop-blur-2xl p-12 md:p-20 border border-primary/10 shadow-2xl">
+<div class="text-center mb-12"><h2 class="font-headline text-4xl md:text-5xl text-primary mb-6 italic">Will You Join Us?</h2><p class="text-rose-accent/70 font-light tracking-[0.3em] uppercase text-xs">Kindly respond by November 30th, 2024</p></div>
+<form class="space-y-10"><div class="flex flex-col items-center gap-6 max-w-sm mx-auto">
+<button class="w-full py-5 bg-gradient-to-br from-primary via-rose-accent to-rose-gold text-on-primary font-bold tracking-[0.2em] uppercase text-xs shadow-lg hover:brightness-110 transition-all duration-500 shimmer-effect" type="button">
+        Joyfully Attend
+    </button>
+<button class="w-full py-5 bg-transparent border border-primary/40 text-primary font-bold tracking-[0.2em] uppercase text-xs hover:bg-primary/5 transition-all duration-500" type="button">
+        Regretfully Decline
+    </button>
+</div></form>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-zinc-950 py-20 px-6 border-t border-rose-accent/10">
+<div class="max-w-4xl mx-auto text-center">
+<h2 class="font-headline text-3xl text-primary mb-4">With Love</h2>
+<p class="font-headline text-5xl text-rose-accent mb-8 italic">Elias &amp; Amara</p>
+<div class="w-px h-16 bg-rose-accent/30 mx-auto mb-8"></div>
+<p class="font-label text-[10px] tracking-[0.4em] uppercase text-stone-500 mb-8">With Love, Elias &amp; Amara 2024</p>
+<div class="flex justify-center gap-8">
+<a class="text-stone-600 hover:text-rose-accent transition-colors text-[10px] tracking-widest uppercase" href="#">Privacy</a>
+<a class="text-stone-600 hover:text-rose-accent transition-colors text-[10px] tracking-widest uppercase" href="#">RSVP Support</a>
+</div>
+</div>
+</footer>
+<!-- Music Player -->
+<div class="fixed bottom-8 right-8 z-[200]">
+<button class="w-14 h-14 bg-surface-container-high/80 backdrop-blur-xl border border-rose-accent/20 flex items-center justify-center group shadow-xl shadow-black/50">
+<div class="relative w-full h-full flex items-center justify-center">
+<span class="material-symbols-outlined text-rose-accent group-hover:scale-110 transition-transform">music_note</span>
+<div class="absolute bottom-3 flex gap-0.5">
+<div class="w-0.5 h-2 bg-rose-accent/40"></div>
+<div class="w-0.5 h-3 bg-rose-accent/40"></div>
+<div class="w-0.5 h-1.5 bg-rose-accent/40"></div>
+<div class="w-0.5 h-2.5 bg-rose-accent/40"></div>
+</div>
+</div>
+</button>
+</div>
+</body></html>
