@@ -20,7 +20,7 @@ export const MusicPlayer: React.FC = () => {
           </span>
           
           {/* Animated Music Bars */}
-          <div className="absolute bottom-3 flex gap-0.5">
+          <div className="absolute bottom-1 flex gap-0.5">
             {[2, 3, 1.5, 2.5].map((height, i) => (
               <motion.div
                 key={i}

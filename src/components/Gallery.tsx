@@ -9,11 +9,11 @@ import { motion } from 'framer-motion';
 
 // Import local images from the assets directory
 import img1 from '../assets/unnamed (1).png';
-import img2 from '../assets/IMG-20241214-WA0005.jpg';
-import img3 from '../assets/IMG-20241214-WA0002.jpg';
+import img2 from '../assets/IMG-20241214-WA0005.webp';
+import img3 from '../assets/IMG-20241214-WA0002.webp';
 import img4 from '../assets/unnamed.png';
 import img5 from '../assets/image-couple.jpg';
-import img6 from '../assets/IMG-20241214-WA0007.jpg';
+import img6 from '../assets/IMG-20241214-WA0007.webp';
 
 // Dynamically mapped local assets
 const localGalleryItems = [

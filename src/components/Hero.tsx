@@ -7,7 +7,7 @@ import React from 'react';
 import { motion, type Variants } from 'framer-motion';
 import { WEDDING_DATA } from '../data/mockData';
 
-import heroMobileBg from '../assets/IMG-20241214-WA0006.jpg';
+import heroMobileBg from '../assets/IMG-20241214-WA0006.webp';
 
 export const Hero: React.FC = () => {
   const containerVariants: Variants = {
