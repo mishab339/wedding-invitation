@@ -3,11 +3,11 @@
  * Cinematic entrance with parallax-like backdrop and staggered text animations.
  */
 
-import React from 'react';
-import { motion, type Variants } from 'framer-motion';
-import { WEDDING_DATA } from '../data/mockData';
+import React from "react";
+import { motion, type Variants } from "framer-motion";
+import { WEDDING_DATA } from "../data/mockData";
 
-import heroMobileBg from '../assets/IMG-20241214-WA0006.webp';
+import heroMobileBg from "../assets/IMG-20241214-WA0006.webp";
 
 export const Hero: React.FC = () => {
   const containerVariants: Variants = {
@@ -32,7 +32,8 @@ export const Hero: React.FC = () => {
   };
 
   return (
-    <header className="relative -mt-30 md:mt-0 h-screen md:h-[120vh] w-full flex items-end md:items-center justify-center pb-24 md:pb-0 overflow-hidden bg-black">
+    // <header className="relative -mt-30 md:mt-0 h-screen md:h-[120vh] w-full flex items-end md:items-center justify-center pb-24 md:pb-0 overflow-hidden bg-black">
+    <header className="relative md:mt-0 h-[100dvh] md:h-[120vh] w-full flex items-end md:items-center justify-center pb-24 md:pb-0 overflow-hidden bg-black">
       {/* Background Image with Overlay (Mobile only) */}
       <div className="absolute inset-0 z-0 md:hidden">
         <motion.img
@@ -69,7 +70,10 @@ export const Hero: React.FC = () => {
         <motion.p
           variants={itemVariants}
           className="font-headline italic text-rose-accent/80 mb-4 md:mb-6 font-light"
-          style={{ fontSize: 'clamp(0.85rem, 1.5vw, 1.25rem)', letterSpacing: 'clamp(0.1em, 0.3vw, 0.25em)' }}
+          style={{
+            fontSize: "clamp(0.85rem, 1.5vw, 1.25rem)",
+            letterSpacing: "clamp(0.1em, 0.3vw, 0.25em)",
+          }}
         >
           {WEDDING_DATA.couple.togetherWithFamilies}
         </motion.p>
@@ -83,33 +87,80 @@ export const Hero: React.FC = () => {
             letterSpacing: "-0.02em",
           }}
         >
-          <span className="inline-block max-w-full break-words pb-1">{WEDDING_DATA.couple.groom}</span>
+          <span className="inline-block max-w-full break-words pb-1">
+            {WEDDING_DATA.couple.groom}
+          </span>
           <span
             className="inline-block font-normal text-rose-accent/40 mx-3 md:mx-8 px-1"
             style={{ fontSize: "clamp(2rem, 6vw, 5rem)" }}
           >
             {WEDDING_DATA.couple.namesSeparator}
           </span>
-          <span className="inline-block max-w-full break-words pb-1">{WEDDING_DATA.couple.bride}</span>
+          <span className="inline-block max-w-full break-words pb-1">
+            {WEDDING_DATA.couple.bride}
+          </span>
         </motion.h1>
 
         <motion.div
           variants={itemVariants}
           className="flex flex-row items-center justify-center w-full mb-10 md:mb-14"
-          style={{ gap: 'clamp(0.75rem, 4vw, 4rem)' }}
+          style={{ gap: "clamp(0.75rem, 4vw, 4rem)" }}
         >
           <div className="flex flex-col items-center min-w-max">
-            <span className="text-primary font-headline mb-1" style={{ fontSize: 'clamp(0.875rem, 2vw, 1.5rem)' }}>{WEDDING_DATA.date.month}</span>
-            <span className="text-on-surface-variant uppercase font-light" style={{ fontSize: 'clamp(0.5rem, 1vw, 0.75rem)', letterSpacing: 'clamp(0.1em, 0.2vw, 0.3em)' }}>{WEDDING_DATA.date.year}</span>
+            <span
+              className="text-primary font-headline mb-1"
+              style={{ fontSize: "clamp(0.875rem, 2vw, 1.5rem)" }}
+            >
+              {WEDDING_DATA.date.month}
+            </span>
+            <span
+              className="text-on-surface-variant uppercase font-light"
+              style={{
+                fontSize: "clamp(0.5rem, 1vw, 0.75rem)",
+                letterSpacing: "clamp(0.1em, 0.2vw, 0.3em)",
+              }}
+            >
+              {WEDDING_DATA.date.year}
+            </span>
           </div>
-          <div className="bg-rose-accent/30 block rotate-12" style={{ width: 'clamp(1px, 0.1vw, 2px)', height: 'clamp(2rem, 5vw, 3.5rem)' }}></div>
+          <div
+            className="bg-rose-accent/30 block rotate-12"
+            style={{
+              width: "clamp(1px, 0.1vw, 2px)",
+              height: "clamp(2rem, 5vw, 3.5rem)",
+            }}
+          ></div>
           <div className="flex flex-col items-center min-w-max px-1">
-            <span className="text-primary font-headline" style={{ fontSize: 'clamp(1.75rem, 4.5vw, 3.5rem)' }}>{WEDDING_DATA.date.day}</span>
+            <span
+              className="text-primary font-headline"
+              style={{ fontSize: "clamp(1.75rem, 4.5vw, 3.5rem)" }}
+            >
+              {WEDDING_DATA.date.day}
+            </span>
           </div>
-          <div className="bg-rose-accent/30 block rotate-12" style={{ width: 'clamp(1px, 0.1vw, 2px)', height: 'clamp(2rem, 5vw, 3.5rem)' }}></div>
+          <div
+            className="bg-rose-accent/30 block rotate-12"
+            style={{
+              width: "clamp(1px, 0.1vw, 2px)",
+              height: "clamp(2rem, 5vw, 3.5rem)",
+            }}
+          ></div>
           <div className="flex flex-col items-center min-w-max">
-            <span className="text-primary font-headline mb-1" style={{ fontSize: 'clamp(0.875rem, 2vw, 1.5rem)' }}>{WEDDING_DATA.date.weekday}</span>
-            <span className="text-on-surface-variant uppercase font-light" style={{ fontSize: 'clamp(0.5rem, 1vw, 0.75rem)', letterSpacing: 'clamp(0.1em, 0.2vw, 0.3em)' }}>{WEDDING_DATA.date.time}</span>
+            <span
+              className="text-primary font-headline mb-1"
+              style={{ fontSize: "clamp(0.875rem, 2vw, 1.5rem)" }}
+            >
+              {WEDDING_DATA.date.weekday}
+            </span>
+            <span
+              className="text-on-surface-variant uppercase font-light"
+              style={{
+                fontSize: "clamp(0.5rem, 1vw, 0.75rem)",
+                letterSpacing: "clamp(0.1em, 0.2vw, 0.3em)",
+              }}
+            >
+              {WEDDING_DATA.date.time}
+            </span>
           </div>
         </motion.div>
 
@@ -119,8 +170,8 @@ export const Hero: React.FC = () => {
           whileTap={{ scale: 0.95 }}
           className="inline-block px-10 py-4 md:px-14 md:py-5 bg-gradient-to-br from-primary via-rose-accent to-rose-gold text-on-primary font-bold uppercase shimmer-effect rounded-sm"
           style={{
-            fontSize: 'clamp(0.65rem, 1vw, 0.85rem)',
-            letterSpacing: 'clamp(0.15em, 0.2vw, 0.25em)'
+            fontSize: "clamp(0.65rem, 1vw, 0.85rem)",
+            letterSpacing: "clamp(0.15em, 0.2vw, 0.25em)",
           }}
           href="#rsvp"
         >
